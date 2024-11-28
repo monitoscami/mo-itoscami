@@ -68,9 +68,12 @@
       display: flex;
       flex-direction: row;
       padding: 10px;
+      flex-wrap: nowrap;
+      justify-content: center;
      }  
      .productos{
       padding: 10px;
+      text-align: center;
      }
      .comprar{
       font-family: "Sevillana", cursive;
@@ -81,11 +84,8 @@
       border-radius: 30px;
       margin-top: 10px;
       align-items: center;
-      margin-left: 30px;
       background-color: rgb(29, 230, 230);
      }
-    
-
     </style>        
   <body>  
     <div class="container">
@@ -133,65 +133,88 @@
          <!-- aqui termina el header -->
 
           <!-- aqui empieza la variedad de  produtos -->
-       <br>
        <!--todos los articulos -->
-       <br>
+      
         <!--inicio de catalogos -->
-      <div id="contenedor_catalogos">
+      <div class="container" id="contenedor">
+        <div class="col-md-12 text-center">
+          <br>
+            <h1 class="frase text-center">Productos</h1>
+            <br>
+            <h5>Nuestros productos más comprados</h5>
+        </div>
         <div id="fila1" class="fila">
           <div id="f1p1" class="productos">
             <img src="imagenes/productos/foto (99).jpeg" alt="" width="200" height="400">
             <br>
             <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
-            <button class="comprar"> Comprar </button>
-          </a>
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f1p2" class="productos">
             <img src="imagenes/productos/foto (30).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar</button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f1p3" class="productos">
             <img src="imagenes/productos/foto (25).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f1p4" class="productos">
             <img src="imagenes/productos/foto (35).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f1p5" class="productos">
             <img src="imagenes/productos/foto (85).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
         </div>
         <div id="fila2" class="fila"> 
           <div id="f2p1" class="productos">
             <img src="imagenes/productos/foto (95).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f2p2" class="productos">
             <img src="imagenes/productos/foto (94).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f2p3" class="productos">
             <img src="imagenes/productos/foto (74).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f2p4" class="productos">
             <img src="imagenes/productos/foto (59).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
           <div id="f2p5" class="productos">
             <img src="imagenes/productos/foto (2).jpeg" alt="" width="200" height="400">
             <br>
-            <button class="comprar"> Comprar </button>
+            <a href="https://wa.me/+18723556435?text=Hola,%20estoy%20interesado%20en%20tus%20productos!">
+              <button class="comprar"> Comprar </button>
+            </a>
           </div>
         </div>
       </div>
@@ -199,26 +222,25 @@
      <!--fin de catalogo -->
      <!-- aqui inicia el footer -->
     <footer id="pie" class="container">
-      <div class="bpie">
-        <center>
+      <div class="bpie text-center">
+     
         <img src="imagenes/redes/logo footer.png" alt=""width="60"height="60">
         <p class="frase">
           "El toque perfecto para cada ocasión."
         </p>
-      </center>
+     
       </div>
-      <div class="bpie">
-        <center>      
-        <h4 class="frase">contactanos</h4>        
-        <h6 class="frase">correo: </h6>      
-        <h6 class="frase">Jaimesrinconkiarayurley@gmail.com</h6>        
-        <h6 class="frase">telefono</h6>      
+      <div class="bpie text-center">
+         
+        <h4 class="frase">Contactanos</h4>        
+        <h6 class="frase">Correo: Jaimesrinconkiarayurley@gmail.com</h6>      
+        <!-- <h6 class="frase">Jaimesrinconkiarayurley@gmail.com</h6>         -->
+        <h6 class="frase">Telefono:  </h6>  
         <h6 class="frase"></h6>+1 8723556435</p>
-      
-      </center>
+     
       </div>
       <div  class="bpie">
-        <h1 class="frase">siguenos en redes</h1> 
+        <h1 class="frase">Siguenos en redes</h1> 
         <div id="padreredes" class="bpie">
         
             <div class="redes">
